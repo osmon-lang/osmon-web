@@ -7,7 +7,7 @@ import { useMedia } from 'hooks/use-media'
 
 const defaultMeta = {
   title: 'Osmon Dasturlash Tili',
-  description: `Osmon Dasturlash Tili web sahifasiga. Ushbu sayt osmon dasturlash tili haqida oxirgi habarlarni ulashadi.`,
+  description: `Osmon Dasturlash Tili web sahifasiga xush kelibsiz. Ushbu sayt osmon dasturlash tili haqida oxirgi habarlarni ulashadi.`,
   ogImage: `${siteOrigin}/og.png`
 }
 

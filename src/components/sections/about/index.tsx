@@ -142,7 +142,7 @@ const AboutSection = () => {
                   <b>chatiga</b>
                 </u>
               </a>{' '}
-              muroojat qiling!
+              murojaat qiling!
             </Text>
           </Box>
           <Box
