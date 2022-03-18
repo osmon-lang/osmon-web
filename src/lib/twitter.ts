@@ -1,6 +1,6 @@
 import { getHrefWithQuery } from './utils/router'
 
-const TWITTER_HASHTAG = '#basementgrotesque'
+const TWITTER_HASHTAG = '#osmonlang'
 const TWEETS_PER_PAGE = 10
 
 export type User = {
