@@ -43,7 +43,7 @@ const Letter = styled('span', {
   }
 })
 
-const LETTERS = ['{', '}', '<', '>', '/', '\\', '|']
+const LETTERS = ['{', '}', '<', '>', '/']
 
 const FooterAnimation = () => {
   const animContainerRef = useRef<HTMLDivElement>(null)
