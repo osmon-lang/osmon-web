@@ -4,7 +4,7 @@ export function download(url: string) {
   //iOS devices do not support downloading. We have to inform user about this.
   if (/(iP)/g.test(navigator.userAgent)) {
     alert(
-      'Your device does not support files downloading. Please try again in desktop browser.'
+      "Sizning qurilmangiz yuklash qobiliyatiga ega emas. Iltimos, kompyuter qurilmalarida qayta urinib ko'ring!."
     )
     return false
   }

@@ -260,10 +260,10 @@ const DataColumns = ({ tweets: initialTweets, releases }: DataColumnsProps) => {
           <Column
             css={{ display: activeSection === 'features' ? 'block' : 'none' }}
           >
-            <Feature title="Family styles" score={1} />
-            <Feature title="Character set" score={4} />
-            <Feature title="Spacing &amp; Kerning" score={3} />
-            <Feature title="Hinting" score={4} />
+            <Feature title="kompilyator" score={1} />
+            <Feature title="standart kutubxona" score={4} />
+            <Feature title="bulut VM" score={3} />
+            <Feature title="yordamchilar" score={4} />
           </Column>
           <Column
             css={{ display: activeSection === 'tweets' ? 'block' : 'none' }}
