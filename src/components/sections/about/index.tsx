@@ -120,11 +120,11 @@ const AboutSection = () => {
                 mb: 16
               }}
             >
-              Bu dasturlash tili no'ldan to'liq qurilgan va o'zbek auditoriyasi
-              uchun to'laqonlikcha moslashtirilgandir. Dasturlash tili hozirgi
-              eng xavfsiz va tez dasturlash tili hisoblanmish, Rust daturlash
-              tili yordamida yozilgan. Til esa dasturni ishga tushurish uchun
-              o'zinig shaxsiy "bulut" nomli virtual mashinasini ishlatadi.
+              Bu dasturlash tili no'ldan qurilgan va o'zbek auditoriyasi uchun
+              to'laqonlikcha moslashtirilgandir. Dasturlash tili hozirgi eng
+              xavfsiz va tez dasturlash tili hisoblanmish, Rust daturlash tili
+              yordamida yozilgan. Til esa dasturni ishga tushurish uchun o'zinig
+              shaxsiy "bulut" nomli virtual mashinasini ishlatadi.
             </Text>
             <Text className="about__subtitle">
               Dasturlash tili asosan{' '}
