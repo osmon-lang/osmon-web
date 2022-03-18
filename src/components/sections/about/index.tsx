@@ -133,7 +133,7 @@ const AboutSection = () => {
                   <b>uwussimo</b>
                 </u>
               </a>{' '}
-              tomonindan tomonindan yaratilgan va shu dasturchi kuzatuvi ostida
+              tomonidan yaratilgan va shu dasturchi kuzatuvi ostida
               shakllantirilib boriladi. Agar sizda quyidagi proyekt bo'yicha
               savol yoki muammolaringiz bo'lsa, iltimos, osmon dasturlash tili
               jamiyati{' '}
