@@ -127,11 +127,22 @@ const AboutSection = () => {
               o'zinig shaxsiy "bulut" nomli virtual mashinasini ishlatadi.
             </Text>
             <Text className="about__subtitle">
-              Dasturlash tili asosan <a href={uwu}>uwussimo</a> tomonindan
-              yaratilgan va shu dasturchi kuzatuvi ostida shakllantirilib
-              boriladi. Agar sizda quyidagi proyekt bo'yicha savol yoki
-              muammolaringiz bo'lsa, iltimos, osmon dasturlash tili jamiyati{' '}
-              <a href={chat}>chatiga</a> muroojat qiling!
+              Dasturlash tili asosan{' '}
+              <a href={uwu}>
+                <u>
+                  <b>uwussimo</b>
+                </u>
+              </a>{' '}
+              tomonindan tomonindan yaratilgan va shu dasturchi kuzatuvi ostida
+              shakllantirilib boriladi. Agar sizda quyidagi proyekt bo'yicha
+              savol yoki muammolaringiz bo'lsa, iltimos, osmon dasturlash tili
+              jamiyati{' '}
+              <a href={chat}>
+                <u>
+                  <b>chatiga</b>
+                </u>
+              </a>{' '}
+              muroojat qiling!
             </Text>
           </Box>
           <Box
