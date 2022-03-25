@@ -20,6 +20,7 @@ import { useToggleState } from 'hooks/use-toggle-state'
 import { useLocomotiveScroll } from 'context/locomotive-scroll'
 import { useRouter } from 'next/router'
 import { event } from 'lib/ga'
+import { download } from '../../../lib/utils'
 
 const StyledHeader = styled('header', {
   my: '$4',
@@ -138,11 +139,11 @@ export const DownloadButton = ({
       `https://t.me/share/url?url=${encoded.url}&text=${encoded.text}`,
       '_blank'
     )
-    // if (!shouldOnlyTweet) {
-    //   download(
-    //     encodeURI(location.origin + '/BasementGrotesque-Black_v1.202.zip')
-    //   )
-    // }
+    if (!shouldOnlyTweet) {
+      download(
+        encodeURI(location.origin + '/BasementGrotesque-Black_v1.202.zip')
+      )
+    }
   }, [shouldOnlyTweet])
 
   return (
