@@ -21,7 +21,7 @@
   src:
     url('/fonts/batang/Batang.woff2') format('woff2'),
     url('/fonts/batang/Batang.woff') format('woff');
-    url('/fonts/batang/Batang.otf') format('otf');
+    url('/fonts/batang/Batang.otf') format('opentype');
     url('/fonts/batang/Batang.ttf') format('ttf');
     url('/fonts/batang/Batang.eot') format('eot');
   font-weight: 800;
