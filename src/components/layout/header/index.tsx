@@ -141,7 +141,7 @@ export const DownloadButton = ({
     )
     // if (!shouldOnlyTweet) {
     //   download(
-    //     encodeURI(location.origin + '/BasementGrotesque-Black_v1.202.zip')
+    //     encodeURI(location.origin + '/osmon-beta-0.0.1.zip')
     //   )
     // }
   }, [shouldOnlyTweet])
