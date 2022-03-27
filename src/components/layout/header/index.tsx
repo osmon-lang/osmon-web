@@ -139,11 +139,11 @@ export const DownloadButton = ({
       `https://t.me/share/url?url=${encoded.url}&text=${encoded.text}`,
       '_blank'
     )
-    if (!shouldOnlyTweet) {
-      download(
-        encodeURI(location.origin + '/BasementGrotesque-Black_v1.202.zip')
-      )
-    }
+    // if (!shouldOnlyTweet) {
+    //   download(
+    //     encodeURI(location.origin + '/BasementGrotesque-Black_v1.202.zip')
+    //   )
+    // }
   }, [shouldOnlyTweet])
 
   return (
