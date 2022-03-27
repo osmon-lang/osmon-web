@@ -20,7 +20,7 @@ import { useToggleState } from 'hooks/use-toggle-state'
 import { useLocomotiveScroll } from 'context/locomotive-scroll'
 import { useRouter } from 'next/router'
 import { event } from 'lib/ga'
-import { download } from '../../../lib/utils'
+// import { download } from '../../../lib/utils'
 
 const StyledHeader = styled('header', {
   my: '$4',
