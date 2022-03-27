@@ -261,6 +261,18 @@ const Footer = () => {
               </Text>
             </FooterLink>
             <FooterLink
+              href="https://wiki.osmon.dev/"
+              target="_blank"
+              rel="noopener"
+              css={{
+                borderRight: '1px solid $colors$white'
+              }}
+            >
+              <Text className="label" as="span" heading>
+                wiki
+              </Text>
+            </FooterLink>
+            <FooterLink
               target="_blank"
               rel="noopener"
               href="mailto:madmaids@icloud.com"
