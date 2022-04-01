@@ -28,6 +28,11 @@ const releases = [
     version: '0.1',
     date: new Date(2022, 3, 17),
     text: 'Birinchi alfa nashr chiqarildi.'
+  },
+  {
+    version: '0.2',
+    date: new Date(2022, 4, 2),
+    text: 'Birinchi beta nashr va cargo reliz.'
   }
 ]
 

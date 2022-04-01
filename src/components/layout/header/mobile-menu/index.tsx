@@ -113,7 +113,7 @@ const MobileMenu = ({ isOn, handleToggle }: ToggleState) => {
               >
                 <p className="stagger">
                   <span>x86_64</span> <span>/</span>{' '}
-                  <span className="regular">v.0.1.0</span>
+                  <span className="regular">v.0.2.0</span>
                 </p>
                 <p className="disabled stagger">
                   <span>i686</span> <span>/</span>{' '}
