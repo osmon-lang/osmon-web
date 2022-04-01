@@ -20,7 +20,7 @@ import { useToggleState } from 'hooks/use-toggle-state'
 import { useLocomotiveScroll } from 'context/locomotive-scroll'
 import { useRouter } from 'next/router'
 import { event } from 'lib/ga'
-// import { download } from '../../../lib/utils'
+import { download } from '../../../lib/utils'
 
 const StyledHeader = styled('header', {
   my: '$4',
@@ -139,11 +139,29 @@ export const DownloadButton = ({
       `https://t.me/share/url?url=${encoded.url}&text=${encoded.text}`,
       '_blank'
     )
-    // if (!shouldOnlyTweet) {
-    //   download(
-    //     encodeURI(location.origin + '/osmon-beta-0.0.1.zip')
-    //   )
-    // }
+    if (!shouldOnlyTweet) {
+      switch (window.navigator.platform) {
+        case 'Win32':
+        case 'Win64':
+          download(
+            encodeURI(location.origin + '/osmon-x86_64-pc-windows-msvc.zip')
+          )
+          break
+        case 'MacIntel':
+          download(
+            encodeURI(location.origin + '/osmon-x86_64-apple-darwin.tar.gz')
+          )
+          break
+        case 'Linux x86_64':
+          download(
+            encodeURI(
+              location.origin + '/osmon-x86_64-unknown-linux-gnu.tar.gz'
+            )
+          )
+          break
+        default:
+      }
+    }
   }, [shouldOnlyTweet])
 
   return (
