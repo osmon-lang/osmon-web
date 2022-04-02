@@ -306,7 +306,7 @@ const Header = () => {
             >
               <p className="ipad">
                 <span>x86_64</span> <span>/</span>{' '}
-                <span className="regular">v0.2.0</span>
+                <span className="regular">v0.4.0</span>
               </p>
               <span className="divider">·</span>
               <p className="disabled">

@@ -33,6 +33,16 @@ const releases = [
     version: '0.2',
     date: new Date(2022, 4, 2),
     text: 'Birinchi beta nashr va cargo reliz.'
+  },
+  {
+    version: '0.3',
+    date: new Date(2022, 4, 2),
+    text: "Xatoliklar to'g'irlangan va stabil holatga keltirilgan."
+  },
+  {
+    version: '0.4',
+    date: new Date(2022, 4, 2),
+    text: "Ishga tushuruvchi haqida ma'lumotlar qo'shildi."
   }
 ]
 
