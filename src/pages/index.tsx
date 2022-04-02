@@ -31,7 +31,7 @@ const releases = [
   },
   {
     version: '0.2',
-    date: new Date(2022, 4, 2),
+    date: new Date(2022, 4, 1),
     text: 'Birinchi beta nashr va cargo reliz.'
   },
   {
