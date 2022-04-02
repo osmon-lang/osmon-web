@@ -149,14 +149,12 @@ export const DownloadButton = ({
           break
         case 'MacIntel':
           download(
-            encodeURI(location.origin + '/osmon-x86_64-apple-darwin.tar.gz')
+            encodeURI(location.origin + '/osmon-x86_64-apple-darwin.zip')
           )
           break
         case 'Linux x86_64':
           download(
-            encodeURI(
-              location.origin + '/osmon-x86_64-unknown-linux-gnu.tar.gz'
-            )
+            encodeURI(location.origin + '/osmon-x86_64-unknown-linux-gnu.zip')
           )
           break
         default:
