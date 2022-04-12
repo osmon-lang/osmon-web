@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next'
-
+import { logs } from '../releases'
 // Layout
 import PageLayout from 'components/layout/page'
 import { getHashtagTweets, TwitterRes } from 'lib/twitter'
@@ -18,33 +18,10 @@ const HomePage = ({
       <Hero />
       <AboutSection />
       <CharactersSection />
-      <DataColumns tweets={tweets} releases={releases} />
+      <DataColumns tweets={tweets} releases={logs} />
     </PageLayout>
   )
 }
-
-const releases = [
-  {
-    version: '0.1',
-    date: new Date(2022, 3, 17),
-    text: 'Birinchi alfa nashr chiqarildi.'
-  },
-  {
-    version: '0.2',
-    date: new Date(2022, 4, 1),
-    text: 'Birinchi beta nashr va cargo reliz.'
-  },
-  {
-    version: '0.3',
-    date: new Date(2022, 4, 2),
-    text: "Xatoliklar to'g'irlangan va stabil holatga keltirilgan."
-  },
-  {
-    version: '0.4',
-    date: new Date(2022, 4, 2),
-    text: "Ishga tushuruvchi haqida ma'lumotlar qo'shildi."
-  }
-]
 
 export const getStaticProps = async () => {
   let tweets: TwitterRes | null

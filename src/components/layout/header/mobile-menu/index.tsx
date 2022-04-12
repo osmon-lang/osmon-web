@@ -9,7 +9,7 @@ import { DownloadButton } from '../'
 
 import s from './mobile-menu.module.scss'
 
-const MobileMenu = ({ isOn, handleToggle }: ToggleState) => {
+const MobileMenu = ({ children, isOn, handleToggle }: ToggleState | any) => {
   useEffect(() => {
     let tween: gsap.core.Tween | undefined
     const staggerItems = document.querySelectorAll('.stagger')
@@ -111,18 +111,7 @@ const MobileMenu = ({ isOn, handleToggle }: ToggleState) => {
                   'p:not(:last-of-type)': { mb: '8px' }
                 }}
               >
-                <p className="stagger">
-                  <span>x86_64</span> <span>/</span>{' '}
-                  <span className="regular">v0.4.0</span>
-                </p>
-                <p className="disabled stagger">
-                  <span>i686</span> <span>/</span>{' '}
-                  <span className="regular">Ishlanmoqda</span>
-                </p>
-                <p className="disabled stagger">
-                  <span>arm | arm64</span> <span>/</span>{' '}
-                  <span className="regular">Ishlanmoqda</span>
-                </p>
+                {children}
               </Box>
             </Box>
             <Box

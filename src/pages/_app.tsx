@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from 'react'
 import { AppProps } from 'next/app'
 import { Toaster } from 'react-hot-toast'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { arches } from "../releases";
 
 import { LocomotiveScrollProvider } from 'context/locomotive-scroll'
 import { DURATION, gsap, SplitText } from 'lib/gsap'
@@ -82,7 +83,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <Toaster position="bottom-center" />
         <Cursor>
           <LocomotiveScrollProvider>
-            <Header />
+            <Header platforms={arches} />
             <Component {...pageProps} />
           </LocomotiveScrollProvider>
         </Cursor>

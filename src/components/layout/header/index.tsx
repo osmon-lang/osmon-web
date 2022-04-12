@@ -2,9 +2,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { isMobile as _isMobile } from 'react-device-detect'
 
-// Lib
-// import { download } from 'lib/utils'
-
 // Stitches
 import { styled } from '../../../../stitches.config'
 
@@ -200,7 +197,11 @@ export const DownloadButton = ({
   )
 }
 
-const Header = () => {
+const Header = ({
+  platforms
+}: {
+  platforms: { arch: string; status: string }[]
+}) => {
   const router = useRouter()
   const mobileMenuState = useToggleState()
   const { scroll } = useLocomotiveScroll()
@@ -303,18 +304,18 @@ const Header = () => {
               }}
             >
               <p className="ipad">
-                <span>x86_64</span> <span>/</span>{' '}
-                <span className="regular">v0.4.0</span>
+                <span>{platforms[0].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[0].status}</span>
               </p>
               <span className="divider">·</span>
               <p className="disabled">
-                <span>i686</span> <span>/</span>{' '}
-                <span className="regular">Bo'lmaydi</span>
+                <span>{platforms[1].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[1].status}</span>
               </p>
               <span className="divider">·</span>
               <p className="disabled">
-                <span>arm | arm64</span> <span>/</span>{' '}
-                <span className="regular">Ishlanmoqda</span>
+                <span>{platforms[2].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[2].status}</span>
               </p>
             </Box>
           </Box>
@@ -351,7 +352,20 @@ const Header = () => {
               '@bp1': { display: 'none' }
             }}
           >
-            <MobileMenu {...mobileMenuState} />
+            <MobileMenu {...mobileMenuState}>
+              <p className="stagger">
+                <span>{platforms[0].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[0].status}</span>
+              </p>
+              <p className="disabled stagger">
+                <span>{platforms[1].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[1].status}</span>
+              </p>
+              <p className="disabled stagger">
+                <span>{platforms[2].arch}</span> <span>/</span>{' '}
+                <span className="regular">{platforms[2].status}</span>
+              </p>
+            </MobileMenu>
           </Box>
         </Box>
       </Container>
