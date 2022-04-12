@@ -169,8 +169,8 @@ const DataColumns = ({ tweets: initialTweets, releases }: DataColumnsProps) => {
             <div>
               <Feature title="kompilyator" score={2} />
               <Feature title="standart kutubxona" score={1} />
-              <Feature title="bulut VM" score={3} />
-              <Feature title="yordamchilar" score={1} />
+              <Feature title="bulut VM" score={4} />
+              <Feature title="yordamchilar" score={4} />
             </div>
           </Column>
           <Column>
@@ -260,9 +260,9 @@ const DataColumns = ({ tweets: initialTweets, releases }: DataColumnsProps) => {
           <Column
             css={{ display: activeSection === 'features' ? 'block' : 'none' }}
           >
-            <Feature title="kompilyator" score={1} />
-            <Feature title="standart kutubxona" score={4} />
-            <Feature title="bulut VM" score={3} />
+            <Feature title="kompilyator" score={2} />
+            <Feature title="standart kutubxona" score={1} />
+            <Feature title="bulut VM" score={4} />
             <Feature title="yordamchilar" score={4} />
           </Column>
           <Column
