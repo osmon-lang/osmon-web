@@ -200,7 +200,7 @@ const Footer = () => {
                   heading
                   outlined
                 >
-                  komillikga yetaklaydi.
+                  komillikka yetaklaydi.
                 </Text>
               </Text>
             </Box>
