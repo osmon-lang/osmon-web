@@ -361,7 +361,7 @@ const Header = ({
                 <span>{platforms[1].arch}</span> <span>/</span>{' '}
                 <span className="regular">{platforms[1].status}</span>
               </p>
-              <p className="disabled stagger">
+              <p className="stagger">
                 <span>{platforms[2].arch}</span> <span>/</span>{' '}
                 <span className="regular">{platforms[2].status}</span>
               </p>
