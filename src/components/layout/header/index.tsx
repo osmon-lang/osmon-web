@@ -313,7 +313,7 @@ const Header = ({
                 <span className="regular">{platforms[1].status}</span>
               </p>
               <span className="divider">·</span>
-              <p className="disabled">
+              <p className="ipad">
                 <span>{platforms[2].arch}</span> <span>/</span>{' '}
                 <span className="regular">{platforms[2].status}</span>
               </p>
